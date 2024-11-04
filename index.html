@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú | Tu Restaurante</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="/assets/style/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/img/pollo_frito_jireh.png" alt="Logo" width="35" height="35"> Tu Restaurante
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ubicacion">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#horarios">Horarios</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-success" href="https://wa.me/yourphonenumber" role="button">Contacto WhatsApp</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Resto del contenido de tu página aquí -->
+
+    <section class="hero-section">
+        <div class="container text-center text-white">
+            <h1>¡Explosión de sabor en cada bocado!</h1>
+            <p class="lead">
+                <b>¡Sin filas ni esperas!</b> Pide desde tu celular y recógelo cuando quieras.<br>
+                <br>Domicilio | Servicio en Mesa | Recoger
+            </p>
+            <a href="#menu"><p class="scroll-down">Menú <br> <i class="fas fa-chevron-down"></i></p></a>
+        </div>
+    </section>
+
+    <div class="menu-container" id="menu">
+        <a href="#paquetes"><button class="menu-button">Paquetes</button></a>
+        <a href="#pizzas"><button class="menu-button">Pizzas</button></a>
+        <a href="#hamburguesas"><button class="menu-button">Hamburguesas</button></a>
+        <a href="#bebidas"><button class="menu-button">Bebidas</button></a>
+    </div>
+
+    <div class="container">
+        <h2 id="paquetes">Paquetes</h2>
+        <div class="menu row">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/nuggets.jpeg" class="card-img" alt="Pizza y Refresco">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">
+                            <Param>Paquete 1</Param>
+                        </h5>
+                        <p class="card-text">Disfruta de una deliciosa pizza grande con un refresco de 2 litros.</p>
+                        <p class="card-text"><strong>$250</strong></p>
+                        <button class="btn btn-primary mt-2"
+                            onclick="agregarAlCarrito('Paquete 1', 250)">Agregar</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/Paquete 2.jpeg" class="card-img" alt="Hamburguesa con Papas">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Paquete 2</h5>
+                        <p class="card-text">Una hamburguesa de res con queso y papas fritas crujientes.</p>
+                        <p class="card-text"><strong>$150</strong></p>
+                        <button class="btn btn-primary mt-2"
+                            onclick="agregarAlCarrito('Paquete 2', 150)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/papas fritas.jpeg" class="card-img" alt="Hamburguesa con Papas">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Paquete 3</h5>
+                        <p class="card-text">Dos hotdog y dos refrescos.</p>
+                        <p class="card-text"><strong>$120</strong></p>
+                        <button class="btn btn-primary mt-2"
+                            onclick="agregarAlCarrito('Paquete 3', 120)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="pizzas">Pizzas</h2>
+        <div class="menu row">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/pizza.jpeg" class="card-img" alt="Pizza y Refresco">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">
+                            <Param>Margherita</Param>
+                        </h5>
+                        <p class="card-text">Clásica italiana con tomate fresco, mozzarella y albahaca.</p>
+                        <p class="card-text"><strong>$250</strong></p>
+                        <button class="btn btn-primary mt-2"
+                            onclick="agregarAlCarrito('Pizza Margherita', 250)">Agregar</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/pizza (2).jpeg" class="card-img" alt="Hamburguesa con Papas">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Pepperoni</h5>
+                        <p class="card-text"> La favorita de muchos, con pepperoni y queso mozzarella.</p>
+                        <p class="card-text"><strong>$240</strong></p>
+                        <button class="btn btn-primary mt-2"
+                            onclick="agregarAlCarrito('Pizza Pepperoni', 240)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/pizza (1).jpeg" class="card-img" alt="Hamburguesa con Papas">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Hawaiana</h5>
+                        <p class="card-text">Combina jamón y piña con queso mozzarella.</p>
+                        <p class="card-text"><strong>$190</strong></p>
+                        <button class="btn btn-primary mt-2"
+                            onclick="agregarAlCarrito('Pizza Hawaiana', 190)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/pizza.jpeg" class="card-img" alt="Hamburguesa con Papas">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Especial del chef</h5>
+                        <p class="card-text">Una pizza diferente cada semana con ingredientes especiales.</p>
+                        <p class="card-text"><strong>$190</strong></p>
+                        <button class="btn btn-primary mt-2"
+                            onclick="agregarAlCarrito('Pizza Especial del chef', 300)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="hamburguesas">Hamburguesas</h2>
+        <div class="menu row">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/hamburguesas (1).jpeg" class="card-img" alt="Pizza y Refresco">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">
+                            <Param>BBQ Bacon</Param>
+                        </h5>
+                        <p class="card-text">Carne, tocino, queso, cebolla caramelizada y salsa BBQ.</p>
+                        <p class="card-text"><strong>$190</strong></p>
+                        <button class="btn btn-primary mt-2"
+                            onclick="agregarAlCarrito('Hamburguesa BBQ Bacon', 190)">Agregar</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/hamburguesas (2).jpeg" class="card-img" alt="Hamburguesa con Papas">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Cheeseburger con queso azul</h5>
+                        <p class="card-text">Carne, queso azul, lechuga, cebolla caramelizada y aderezo de la casa.</p>
+                        <p class="card-text"><strong>$200</strong></p>
+                        <button class="btn btn-primary mt-2"
+                            onclick="agregarAlCarrito('Hamburguesa Cheeseburger con queso azul', 200)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/hamburguesas (3).jpeg" class="card-img" alt="Hamburguesa con Papas">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Picante</h5>
+                        <p class="card-text">Carne, jalapeños, queso cheddar, cebolla caramelizada y salsa picante.</p>
+                        <p class="card-text"><strong>$195</strong></p>
+                        <button class="btn btn-primary mt-2"
+                            onclick="agregarAlCarrito('Hamburguesa Picante', 195)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/hamburguesas.jpeg" class="card-img" alt="Hamburguesa con Papas">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Vegetariana</h5>
+                        <p class="card-text">Hamburguesa de vegetales, queso, lechuga, tomate y aguacate.</p>
+                        <p class="card-text"><strong>$160</strong></p>
+                        <button class="btn btn-primary mt-2"
+                            onclick="agregarAlCarrito('Hamburguesa Vegetariana', 160)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="bebidas">Bebidas</h2>
+        <div class="menu row">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/refrescos.jpeg" class="card-img" alt="Pizza y Refresco">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">
+                            <Param>Refrescos</Param>
+                        </h5>
+                        <p class="card-text">Coca-Cola, Pepsi, Sprite, Fanta.</p>
+                        <p class="card-text"><strong>$30</strong></p>
+                        <button class="btn btn-primary mt-2" onclick="agregarAlCarrito('Refresco', 30)">Agregar</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="/assets/img/Aguas frescas.jpg" class="card-img" alt="Hamburguesa con Papas">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h5 class="card-title">Aguas frescas 1/2L</h5>
+                        <p class="card-text">Jamaica, Orchata, Naranja y Manzana</p>
+                        <p class="card-text"><strong>$30</strong></p>
+                        <button class="btn btn-primary mt-2"
+                            onclick="agregarAlCarrito('Aguas frescas 1/2', 30)">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Sección Invitación al Restaurante con Mapa -->
+    <section class="invitation-section" id="ubicacion">
+        <div class="container">
+            <div class="invitation-text">
+                <h2>¡Ven a Disfrutar de Nuestro Pollo Frito!</h2>
+                <p>¡Te esperamos con los brazos abiertos!</p>
+            </div>
+            <div class="map-container">
+                <h4>Ubicación</h4>
+                <!-- Google Maps iframe -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15043.33382494926!2d-99.1287345!3d19.5057998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9a0e2634081%3A0x3d1259a90c539143!2sPOLLO%20FRITO%20JIREH!5e0!3m2!1ses-419!2smx!4v1729552942039!5m2!1ses-419!2smx"
+                    width="600" height="450" style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <!-- Botón para obtener indicaciones -->
+                <a href="https://www.google.com/maps/dir/?api=1&destination=19.5057998,-99.1287345" target="_blank">
+                    <button type="button" class="btn btn-primary" style="margin-top: 10px;">
+                        Obtener indicaciones
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-white text-center text-lg-start" style="background-color: #23242a;" id="horarios">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Horarios</h5>
+
+                    <table class="table text-center text-white">
+                        <tbody class="font-weight-normal">
+                            <tr>
+                                <td>Lunes - Jueves:</td>
+                                <td>10am - 9pm</td>
+                            </tr>
+                            <tr>
+                                <td>Viernes - Domingo:</td>
+                                <td>10am - 10pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">¿Quienes somos?</h5>
+
+                    <p>
+                        Pollo frito hecho con amor y tradición. ¡Ven a probarlo y compruébalo tú mismo!"
+                    </p>
+
+                    <p>
+                        ¡Alerta de adicción! Nuestro pollo frito es tan delicioso que no podrás comer solo uno.
+                    </p>
+
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+
+                    <ul class="fa-ul" style="margin-left: 1.65em;">
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">San Pedro
+                                Zacatenco, La Rioja #1136 A. CDMX</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+52 55 7211
+                                6988</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <!-- Facebook -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- Dribbble -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-instagram"></i></a>
+                        <!-- Twitter -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-tiktok"></i></a>
+                        <!-- Google + -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fas fa-map-marker-alt"></i></a>
+
+                        <!-- Linkedin -->
+                    </div>
+                </div>
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-white" href="#">PolloFritoJireh</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- Ícono flotante del carrito con notificación -->
+    <div id="carrito-icono" class="carrito-icono">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="carrito-notificacion" class="badge bg-danger">0</span>
+    </div>
+
+    <!-- Carrito emergente -->
+    <div id="carrito-popup" class="carrito-popup">
+        <div class="carrito-content">
+            <span class="close" onclick="cerrarCarrito()">&times;</span>
+            <h2>Carrito</h2>
+            <ul id="lista-carrito" class="list-group mb-3"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button class="btn btn-success" onclick="finalizarPedido()">Enviar Pedido</button>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2>Para finalizar</h2>
+            <label for="name">¿A nombre de quien hacemos la orden?</label>
+            <input type="text" id="nombre" placeholder="Nombre">
+            <label for="name">Tu orden es para:</label>
+
+            <select id="tipoPedido">
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="Comer en restaurante">Comer en restaurante</option>
+                <option value="Para llevar">Para llevar</option>
+                <option value="A domicilio">A domicilio</option>
+            </select>
+
+            <br>
+            <button class="btn btn-success" onclick="enviarPedido()">Enviar Pedido por WhatsApp</button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/scripts/carrito.js"></script>
+</body>
+
+</html>
