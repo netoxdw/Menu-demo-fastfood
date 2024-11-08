@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Popula cafe;
+    src: url(/assets/fonts/PopularCafeNF.otf);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -15,7 +20,7 @@ html {
 }
 
 .navbar {
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0, 0.3);
     /* Un rojo hamburguesa */
     border-bottom: 2px solid #ffc107;
     /* Bordes amarillos para contraste */
@@ -98,7 +103,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
     /* Capa de oscurecimiento negro con transparencia */
     z-index: 1;
     /* Asegúrate de que esté debajo del contenido */
@@ -126,6 +131,7 @@ html {
 
 h1 {
     margin-bottom: 30px;
+    font-family: "Popula cafe";
 }
 
 a {
@@ -204,6 +210,7 @@ a {
 h2 {
     color: #ea0029;
     margin-top: 100px;
+    font-family: "Popula cafe";
 }
 
 .card {
@@ -213,6 +220,7 @@ h2 {
     transition: transform 0.3s ease-in-out;
     height: 300px;
     /* Establece una altura fija para todas las tarjetas */
+    text-align: start;
 }
 
 .card:hover {
@@ -226,14 +234,14 @@ h2 {
     /* Ajuste para que la imagen cubra toda la tarjeta */
     object-fit: cover;
     /* Asegura que la imagen cubra completamente el área asignada sin distorsionarse */
-    opacity: 0.7;
+    opacity: 0.6;
     /* Oscurecimiento de la imagen para mejorar la legibilidad del texto */
 }
 
 .card-img-overlay {
-    padding: 10px;
-    /* Espaciado interno */
+    padding: 15PX;
 }
+
 
 .btn-primary {
     align-self: center;

@@ -48,11 +48,7 @@
 
     <section class="hero-section">
         <div class="container text-center text-white">
-            <h1>¡Explosión de sabor en cada bocado!</h1>
-            <p class="lead">
-                <b>¡Sin filas ni esperas!</b> Pide desde tu celular y recógelo cuando quieras.<br>
-                <br>Domicilio | Servicio en Mesa | Recoger
-            </p>
+            <h1>Hamburguesas la esquinita</h1>
             <a href="#menu"><p class="scroll-down">Menú <br> <i class="fas fa-chevron-down"></i></p></a>
         </div>
     </section>
@@ -67,10 +63,11 @@
     <div class="container">
         <h2 id="paquetes">Paquetes</h2>
         <div class="menu row">
+    
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/nuggets.jpeg" class="card-img" alt="Pizza y Refresco">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
                         <h5 class="card-title">
                             <Param>Paquete 1</Param>
                         </h5>
@@ -78,27 +75,27 @@
                         <p class="card-text"><strong>$250</strong></p>
                         <button class="btn btn-primary mt-2"
                             onclick="agregarAlCarrito('Paquete 1', 250)">Agregar</button>
-
+    
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/Paquete 2.jpeg" class="card-img" alt="Hamburguesa con Papas">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
-                        <h5 class="card-title">Paquete 2</h5>
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Paquete 2</h5> <!-- Mueve h5 al inicio -->
                         <p class="card-text">Una hamburguesa de res con queso y papas fritas crujientes.</p>
                         <p class="card-text"><strong>$150</strong></p>
-                        <button class="btn btn-primary mt-2"
-                            onclick="agregarAlCarrito('Paquete 2', 150)">Agregar</button>
+                        <button class="btn btn-primary mt-2" onclick="agregarAlCarrito('Paquete 2', 150)">Agregar</button>
                     </div>
                 </div>
             </div>
-
+            
+    
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/papas fritas.jpeg" class="card-img" alt="Hamburguesa con Papas">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
                         <h5 class="card-title">Paquete 3</h5>
                         <p class="card-text">Dos hotdog y dos refrescos.</p>
                         <p class="card-text"><strong>$120</strong></p>
@@ -108,13 +105,13 @@
                 </div>
             </div>
         </div>
-
+    
         <h2 id="pizzas">Pizzas</h2>
         <div class="menu row">
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/pizza.jpeg" class="card-img" alt="Pizza y Refresco">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
                         <h5 class="card-title">
                             <Param>Margherita</Param>
                         </h5>
@@ -122,27 +119,27 @@
                         <p class="card-text"><strong>$250</strong></p>
                         <button class="btn btn-primary mt-2"
                             onclick="agregarAlCarrito('Pizza Margherita', 250)">Agregar</button>
-
+    
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/pizza (2).jpeg" class="card-img" alt="Hamburguesa con Papas">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
                         <h5 class="card-title">Pepperoni</h5>
-                        <p class="card-text"> La favorita de muchos, con pepperoni y queso mozzarella.</p>
+                        <p class="card-text">La favorita de muchos, con pepperoni y queso mozzarella.</p>
                         <p class="card-text"><strong>$240</strong></p>
                         <button class="btn btn-primary mt-2"
                             onclick="agregarAlCarrito('Pizza Pepperoni', 240)">Agregar</button>
                     </div>
                 </div>
             </div>
-
+    
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/pizza (1).jpeg" class="card-img" alt="Hamburguesa con Papas">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
                         <h5 class="card-title">Hawaiana</h5>
                         <p class="card-text">Combina jamón y piña con queso mozzarella.</p>
                         <p class="card-text"><strong>$190</strong></p>
@@ -154,23 +151,23 @@
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/pizza.jpeg" class="card-img" alt="Hamburguesa con Papas">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
                         <h5 class="card-title">Especial del chef</h5>
                         <p class="card-text">Una pizza diferente cada semana con ingredientes especiales.</p>
-                        <p class="card-text"><strong>$190</strong></p>
+                        <p class="card-text"><strong>$300</strong></p>
                         <button class="btn btn-primary mt-2"
                             onclick="agregarAlCarrito('Pizza Especial del chef', 300)">Agregar</button>
                     </div>
                 </div>
             </div>
         </div>
-
+    
         <h2 id="hamburguesas">Hamburguesas</h2>
         <div class="menu row">
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/hamburguesas (1).jpeg" class="card-img" alt="Pizza y Refresco">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
                         <h5 class="card-title">
                             <Param>BBQ Bacon</Param>
                         </h5>
@@ -178,14 +175,14 @@
                         <p class="card-text"><strong>$190</strong></p>
                         <button class="btn btn-primary mt-2"
                             onclick="agregarAlCarrito('Hamburguesa BBQ Bacon', 190)">Agregar</button>
-
+    
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/hamburguesas (2).jpeg" class="card-img" alt="Hamburguesa con Papas">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
                         <h5 class="card-title">Cheeseburger con queso azul</h5>
                         <p class="card-text">Carne, queso azul, lechuga, cebolla caramelizada y aderezo de la casa.</p>
                         <p class="card-text"><strong>$200</strong></p>
@@ -194,11 +191,11 @@
                     </div>
                 </div>
             </div>
-
+    
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/hamburguesas (3).jpeg" class="card-img" alt="Hamburguesa con Papas">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
                         <h5 class="card-title">Picante</h5>
                         <p class="card-text">Carne, jalapeños, queso cheddar, cebolla caramelizada y salsa picante.</p>
                         <p class="card-text"><strong>$195</strong></p>
@@ -210,7 +207,7 @@
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/hamburguesas.jpeg" class="card-img" alt="Hamburguesa con Papas">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
                         <h5 class="card-title">Vegetariana</h5>
                         <p class="card-text">Hamburguesa de vegetales, queso, lechuga, tomate y aguacate.</p>
                         <p class="card-text"><strong>$160</strong></p>
@@ -220,27 +217,27 @@
                 </div>
             </div>
         </div>
-
+    
         <h2 id="bebidas">Bebidas</h2>
         <div class="menu row">
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/refrescos.jpeg" class="card-img" alt="Pizza y Refresco">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
                         <h5 class="card-title">
                             <Param>Refrescos</Param>
                         </h5>
                         <p class="card-text">Coca-Cola, Pepsi, Sprite, Fanta.</p>
                         <p class="card-text"><strong>$30</strong></p>
                         <button class="btn btn-primary mt-2" onclick="agregarAlCarrito('Refresco', 30)">Agregar</button>
-
+    
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="/assets/img/Aguas frescas.jpg" class="card-img" alt="Hamburguesa con Papas">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
                         <h5 class="card-title">Aguas frescas 1/2L</h5>
                         <p class="card-text">Jamaica, Orchata, Naranja y Manzana</p>
                         <p class="card-text"><strong>$30</strong></p>
@@ -250,8 +247,9 @@
                 </div>
             </div>
         </div>
-
+    
     </div>
+    
 
 
     <!-- Sección Invitación al Restaurante con Mapa -->
