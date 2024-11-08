@@ -11,6 +11,12 @@ html {
     scroll-margin-top: 70px;
 }
 
+body{
+    background: rgb(253, 208, 76);
+    background: linear-gradient(0deg, rgba(253, 208, 76, 1) 5%, rgba(253, 222, 109, 1) 50%, rgba(252, 188, 35, 1) 85%);
+    
+}
+
 .header {
     position: absolute;
     top: 0;
@@ -203,9 +209,6 @@ a {
     /* Opcional: alinea los elementos al inicio del contenedor al hacer scroll */
 }
 
-.paquetes {
-    margin: 0;
-}
 
 h2 {
     color: #ea0029;
@@ -234,12 +237,19 @@ h2 {
     /* Ajuste para que la imagen cubra toda la tarjeta */
     object-fit: cover;
     /* Asegura que la imagen cubra completamente el área asignada sin distorsionarse */
-    opacity: 0.6;
+    opacity: 0.45;
     /* Oscurecimiento de la imagen para mejorar la legibilidad del texto */
 }
 
 .card-img-overlay {
     padding: 15PX;
+}
+h5{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+p{
+    font-size: 1.1rem;
 }
 
 
